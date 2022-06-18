@@ -87,7 +87,7 @@ async def start(update: Update, context: CustomContext) -> None:
     url = context.bot_data["https://meta-telebot-alpha.herokuapp.com/"]
     payload_url = html.escape(f"{url}/submitpayload?user_id=<your user id>&payload=<payload>")
     text = (
-        f"To check if the bot is still running, call <code>{url}/healthcheck</code>.\n\n"
+        f"To check ifs the bot is still running, call <code>{url}/healthcheck</code>.\n\n"
         f"To post a custom update, call <code>{payload_url}</code>."
     )
     await update.message.reply_html(text=text)
